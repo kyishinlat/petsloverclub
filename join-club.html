@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Lovers Club</title>
+</head>
+<body>
+
+<header>
+    <h1>Join the Pet Lovers Club!</h1>
+    <p>Meet alike people who adore pets just as much as you!</p>
+
+    <nav>
+        <a href="index.html">Home | </a>
+        <a href="pets.html">Meet the Pets | </a>
+        <a href="pet-comparison.html">Pet Comparison | </a>
+        <a href="join-club.html.html">Join the club | </a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Become a Member</h2>
+
+        <p>Complete the form below to tell us about yourself and your love for animals!</p>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>About You</legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Favorite Pets</legend>
+
+                <p>
+                    <label for="favorite-pet">Which is your favorite pet?:</label>
+                    <select id="favorite-pet" name="favorite-pet" required>
+                        <option value="">-- Choose a pet --</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="rabbit">Rabbit</option>
+                        <option value="hamsters">Hamster</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>Which pets do you own?</p>
+
+                <input type="checkbox" id="owndog" name="pets[]" value="dog">
+                <label for="owndog">Dog</label><br>
+
+                <input type="checkbox" id="owncat" name="pets[]" value="cat">
+                <label for="owncat">Cat</label><br>
+
+                <input type="checkbox" id="ownrabbit" name="pets[]" value="rabbit">
+                <label for="ownrabbit">Rabbit</label><br>
+
+                <input type="checkbox" id="ownhamster" name="pets[]" value="hamster">
+                <label for="ownhamster">Hamster</label><br>
+
+                <input type="checkbox" id="ownother" name="pets[]" value="other">
+                <label for="ownother">Other</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Pet Experience</legend>
+
+                <p>How much experience do you have caring for pets?</p>
+
+                <input type="radio" id="beginner" name="experience" value="beginner" required>
+                <label for="beginner">Beginner</label><br>
+
+                <input type="radio" id="intermediate" name="experience" value="intermediate" required>
+                <label for="intermediate">Intermediate</label><br>
+
+                <input type="radio" id="advanced" name="experience" value="advanced" required>
+                <label for="advanced">Advanced</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tell Us More</legend>
+
+                <p>
+                    <label for="reason">Why do you love animals?</label><br>
+                    <textarea id="reason" name="reason" rows="5" cols="40" placeholder="Tell us your story..."></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Join the club</button>
+                <button type="reset">Clear Form</button>
+            </p>
+        </form>
+    </section>
+</main>
